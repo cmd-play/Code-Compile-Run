@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.GET_USERS = exports.UPDATE_USERS = exports.INVALID_USER = exports.INVALID_GROUP = exports.VALID_GROUP = exports.JOIN_GROUP = exports.NEW_GROUP = exports.CODE_SYNC = void 0;
+exports.CODE_SYNC = "code-sync";
+exports.NEW_GROUP = "new-group";
+exports.JOIN_GROUP = "join-group";
+exports.VALID_GROUP = "valid-group";
+exports.INVALID_GROUP = "invalid-group";
+exports.INVALID_USER = "invalid-user";
+exports.UPDATE_USERS = "update-users";
+exports.GET_USERS = "get-users";
