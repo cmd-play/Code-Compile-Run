@@ -13,7 +13,6 @@ wss.on("connection", function connection(ws) {
   ws.on('message', (data) => {
     const message = JSON.parse(data.toString());
     if(message.type === NEW_GROUP) {console.log("New room created : ", message.roomId); manager.addRoom(message.roomId);}
-
     if(message.type === JOIN_GROUP) manager.addUser(message.username, ws, message.roomId);
     if(message.type === GET_USERS) manager.getUsers(ws);
   })

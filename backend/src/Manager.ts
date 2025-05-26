@@ -12,6 +12,7 @@ export class Manager {
     this.users = [];
   }
 
+  
   addUser(username: string, socket: WebSocket, user_roomId: string) {
     
     const curr_room = this.Rooms.find((room) => user_roomId == room.roomId);
